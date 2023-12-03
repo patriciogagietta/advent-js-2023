@@ -1,5 +1,7 @@
 function findNaughtyStep(original, modified) {
 
+    if (original === modified) return ''
+
     const arrayOriginal = original.split("")
     const arrayModified = modified.split("")
 
@@ -12,5 +14,4 @@ function findNaughtyStep(original, modified) {
                 : arrayModified[i]
         }
     }
-    return ''
 }
