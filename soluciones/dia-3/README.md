@@ -26,4 +26,4 @@ A tener en cuenta:
 
 -La modificación puede ocurrir en cualquier lugar de la cadena.
 
--La secuencia original puede estar vacía
+-La secuencia original puede estar vacía.
