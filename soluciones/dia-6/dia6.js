@@ -17,6 +17,3 @@ function maxDistance(movements) {
     ? contDerecha - contIzquierda + contAsterisco
     : contIzquierda - contDerecha + contAsterisco
 }
-const movements = '*****'
-const result = maxDistance(movements)
-console.log(result) // -> 5
