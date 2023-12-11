@@ -10,18 +10,11 @@ Debemos devolver un string multilínea con el árbol de Navidad formado con los 
 
 Por ejemplo si recibimos la cadena "123" y el número 4 como altura, tendríamos que construir este árbol:
 
-    1
-   2 3
-  1 2 3
-1 2 3 1 2
-    |
+![App screenshot](https://i.imgur.com/PaAj5L1.png)
 
 Si recibimos la cadena *@o y el número 3, el árbol que debemos devolver es:
 
-  *
- @ o
-* @ o
-  |
+![App screenshot](https://i.imgur.com/CkoFn2G.png)
 
 Nota:
 
