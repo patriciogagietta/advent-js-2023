@@ -1,5 +1,4 @@
 function checkIsValidCopy(original, copy) {
-
     const degradeOrder = "abcdefghijklmnopqrstuvwxyz#+:. "
     let isCopy = true
 
