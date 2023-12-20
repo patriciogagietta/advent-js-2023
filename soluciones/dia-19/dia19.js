@@ -7,34 +7,22 @@ function revealSabotage(store) {
 
             let count = 0
 
-            if (store[row][col + 1] === '*') {
-                count++
-            }
-            if (store[row][col - 1] === '*') {
-                count++;
-            }
-            if (store[row - 1] && store[row - 1][col] === '*') {
-                count++
-            }
-            if (store[row + 1] && store[row + 1][col] === '*') {
-                count++
-            }
-            if (store[row - 1] && store[row - 1][col - 1] === '*') {
-                count++
-            }
-            if (store[row - 1] && store[row - 1][col + 1] === '*') {
-                count++
-            }
-            if (store[row + 1] && store[row + 1][col + 1] === '*') {
-                count++
-            }
-            if (store[row + 1] && store[row + 1][col - 1] === '*') {
-                count++
+            const der = store[row][col + 1]
+            const izq = store[row][col - 1]
+            const arriba = store[row - 1]?.[col]
+            const abajo = store[row + 1]?.[col]
+            const arribaIzq = store[row - 1]?.[col - 1]
+            const arribaDer = store[row - 1]?.[col + 1]
+            const abajoIzq = store[row + 1]?.[col - 1]
+            const abajoDer = store[row + 1]?.[col + 1]
+
+            const pos = [der, izq, arriba, abajo, arribaIzq, arribaDer, abajoIzq, abajoDer]
+
+            for (const adyasente of pos) {
+                count += (adyasente == '*')
             }
             
-            if (parseInt(store[row][col]) > 0) {
-                count += parseInt(store[row][col]);
-            }
+            count += (parseInt(store[row][col]) > 0)
 
             store[row][col] = count > 0 ? count.toString() : ' '
         }
@@ -42,5 +30,3 @@ function revealSabotage(store) {
     
     return store
 }
-
-// Larga vida a los if xd
