@@ -1,5 +1,5 @@
 
-# Advent JS by [@Midudev](https://www.github.com/midudev) 2023 🎅🎄
+# Advent JS by [@Midudev](https://www.github.com/midudev) 🎅🎄
 
 ![Logo](https://adventjs.dev/og.jpg)
 
